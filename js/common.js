@@ -1,71 +1,30 @@
-/* スライダー */
-$(function () {
-	var ua = navigator.userAgent;
-	if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-		$('.bg-slider.sp_block').bgSwitcher({
-		images: ['images/sp/mv.jpg','images/sp/mv.jpg','images/case_img03.png'],
+$(function() {
+	$('.slick-box').slick({
+
+		dots: false, // スライダー下部に表示される、ドット状のページネーションです
+		infinite: true, // 無限ループ
+		speed: 300, // 切り替わりのスピード
+		slidesToShow: 4, //通常 1024px以上の領域では4画像表示
+		slidesToScroll: 4,
+		/*autoplay: true,*/
+		responsive: [{
+			breakpoint: 1024,settings: { //601px～1024pxでは3画像表示
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 600,settings: { //481px～600pxでは2画像表示
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,settings: {//480px以下では1画像表示
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}]
+
 	});
-		// スマートフォン用コード
-	} else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-		// タブレット用コード
-	} else {
-		// PC用コード
-		$('.bg-slider.pc_block').bgSwitcher({
-		images: ['images/mv.jpg','images/mv.jpg','images/case_img03.png'],
-	});
-	}
-})
-
-
-
-
-
-$(function($) {
-	$('.bg-slider.pc_block').bgSwitcher({
-		images: ['images/mv.jpg','images/mv.jpg','images/case_img03.png'],
-	});
-	/*
-	$('.bg-slider.sp_block').bgSwitcher({
-		images: ['images/sp/mv.jpg','images/sp/mv.jpg','images/case_img03.png'],
-	});*/
-});
-
-
-
-/* スムーススクロール */
-$(function(){
-	$('.ftr_gotop_link').click(function(){
-		var speed = 500;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
-		$("html, body").animate({scrollTop:position}, speed, "swing");
-		return false;
-	});
-});
-
-
-
-$(function(){
-
-
-		$('#gnav').slicknav({
-			label: 'メニュー',
-			 appendTo:'.hdr_wrap',
-
-		});
-		$('.slicknav_menutxt').insertAfter('.slicknav_icon');
-
-		$(".slicknav_btn").click(function(){
-			$(this).toggleClass("active");
-		});
-	});
-
-
-//Pマーク保存禁止
-$(function(){
-	$(".ftr_copy_privacy")
-		.on("contextmenu",function(){return false;})
-		.on("onmousedown",function(){return false;})
-		.on("onselectstart",function(){return false;});
 });
