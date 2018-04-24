@@ -1,0 +1,503 @@
+@charset "utf-8";
+
+/* **************************
+  共通
+************************** */
+.pc_block {
+	display: block !important;
+}
+.sp_block {
+	display: none !important;
+}
+
+
+.container {
+	background: #fff;
+}
+
+
+
+.cont_ttl {
+	font-size: 40px;
+	font-family: "Kozuka Gothic Pro";
+	line-height: 1;
+	font-style: oblique;
+	font-weight: bold;
+	color: #74ecc9;
+	background: #000;
+	padding: 20px 0;
+}
+.cont_ttl_inr {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.cont_ttl h2 {
+	font-size: 39.5px;
+	line-height: 0.8;
+	padding-left: 20px;
+	padding-right: 20px;
+	letter-spacing: 0.05em;
+}
+
+/* 1見出し */
+.cont_ttl-no1 {
+	color: #fffc00;
+	font-size: 100px;
+	line-height: 0.8;
+}
+.cont_ttl-no2 {
+	color: #e21423;
+	font-size: 100px;
+	line-height: 0.8;
+}
+.ttl-none {
+	padding: 40px 0;
+	margin-top: 80px;
+}
+
+.ttl-none h2 {
+	padding-left: 0;
+}
+
+
+
+/* 150 CARSEVEN  shops */
+.cont_txtbox_inr {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	justify-content: space-between;
+}
+.cont_txtbox_inr .cont_txt {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 460px;
+}
+.cont_txtbox_inr .cont_txt h3 {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Kozuka Gothic Pro";
+	color: rgb(5, 0, 1);
+	line-height: 1.4;
+}
+.cont_txtbox_inr .cont_txt p {
+	font-size: 18px;
+	padding-top: 30px;
+	font-family: "KozGoPro";
+	line-height: 1.556;
+}
+.cont_txtbox_inr .cont_img {
+
+}
+
+
+
+/* ODOMETER CHECK */
+.cont_checkbox {
+	margin-bottom: 80px;
+}
+.cont_checkbox_inr {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: #f1f1f1;
+	border: 1px solid #999;
+	border-radius: 10px;
+	padding: 50px 0;
+}
+.cont_checkbox_ttl {
+	text-align: center;
+	color: #050001;
+	font-weight: bold;
+	font-family: "Kozuka Gothic Pro";
+}
+.cont_checkbox_ttl h4{
+	line-height: 0.8;
+	font-size: 48px;
+	color: #050001;
+}
+.cont_checkbox_ttl span {
+	padding-top: 20px;
+	display: block;
+}
+
+
+/* label img */
+.cont_checkbox_label {
+	text-align: center;
+	margin-top: 30px;
+}
+.cont_checkbox_img_inr {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	margin-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	justify-content: space-between;
+}
+.cont_checkbox_img_inr .cont_txt {
+	padding-left: 50px;
+	width: 450px;
+}
+.cont_checkbox_img_inr .cont_txt p {
+	font-size: 18px;
+	font-family: "KozGoPro";
+	color: rgb(5, 0, 1);
+	line-height: 1.556;
+
+}
+.cont_checkbox_img_inr .cont_img {
+	text-align: center;
+
+}
+
+
+/* cont_listbox */
+.cont_listbox_inr {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.cont_listbox_inr .cont_txt {
+	padding-left: 20px;
+}
+.cont_listbox_inr .cont_txt p {
+	font-size: 18px;
+	font-family: "KozGoPro";
+	line-height: 1.556;
+}
+.cont_listarea {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: #f1f1f1;
+	border: 1px solid #999;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 50px;
+	display: flex;
+}
+.cont_listarea ul:first-child {
+	margin-right: 190px;
+}
+.cont_listarea li {
+	font-size: 18px;
+	font-family: "Kozuka Gothic Pro";
+	color: rgb(5, 0, 1);
+	line-height: 1.556;
+}
+.cont_listarea span {
+	font-weight: bold;
+}
+
+
+/* 画像 */
+.cont_listarea_img {
+	margin-top: 50px;
+}
+.cont_listarea_img ul {
+	display: flex;
+	justify-content: space-between;
+}
+.cont_listarea_img li {
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+
+}
+
+
+
+
+
+
+	/* *************************************************************
+
+	  SP
+
+	************************************************************* */
+
+@media screen and (max-width: 768px) {
+
+	/* **************************
+	  共通
+	************************** */
+	.sp_block {
+		display: block !important;
+	}
+	.pc_block {
+		display: none !important;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+
+
+
+
+	/* **************************
+	  contents
+	************************** */
+	#contents {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.container {
+		width: 100%;
+	}
+
+
+
+	/* **************************
+	  title
+	************************** */
+	.cont_ttl {
+		font-size: 40px;
+		font-family: "Kozuka Gothic Pro";
+		line-height: 1;
+		font-style: oblique;
+		font-weight: bold;
+		color: #74ecc9;
+		background: #000;
+		padding: 20px 0;
+	}
+	.cont_ttl_inr {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding-left: 20px;
+	}
+	.cont_ttl h2 {
+		font-size: 20px;
+		line-height: 1.2;
+		padding-left: 20px;
+		padding-right: 20px;
+		letter-spacing: 0.05em;
+	}
+
+
+	/* 1見出し */
+	.cont_ttl-no1 {
+		color: #fffc00;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+	.cont_ttl-no2 {
+		color: #e21423;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+	.ttl-none {
+		padding: 20px 0;
+		margin-top: 80px;
+	}
+
+	.ttl-none h2 {
+		padding-left: 0;
+	}
+
+
+	/* 150 CARSEVEN  shops */
+	.cont_txtbox {
+		padding-top: 20px;
+	}
+	.cont_txtbox_inr {
+		width: 100%;
+		display: inherit;
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.cont_txtbox_inr .cont_txt {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: inherit;
+		box-sizing: border-box;
+	}
+	.cont_txtbox_inr .cont_txt h3 {
+		font-size: 25px;
+		font-weight: bold;
+		font-family: "Kozuka Gothic Pro";
+		color: rgb(5, 0, 1);
+		line-height: 1.4;
+	}
+	.cont_txtbox_inr .cont_txt p {
+		font-size: 15px;
+		padding-top: 10px;
+		font-family: "KozGoPro";
+		line-height: 1.556;
+	}
+	.cont_txtbox_inr .cont_img {
+		padding: 0 10px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+
+	/* ODOMETER CHECK */
+	.cont_checkbox {
+		margin-bottom: 80px;
+		padding: 0 10px;
+	}
+	.cont_checkbox_inr {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 25px;
+		background: #f1f1f1;
+		border: 1px solid #999;
+		border-radius: 10px;
+		box-sizing: border-box;
+		padding: 25px 10px;
+	}
+	.cont_checkbox_ttl {
+		text-align: center;
+		color: #050001;
+		font-weight: bold;
+		font-family: "Kozuka Gothic Pro";
+	}
+	.cont_checkbox_ttl h4{
+		line-height: 0.8;
+		font-size: 24px;
+		color: #050001;
+	}
+	.cont_checkbox_ttl span {
+		padding-top: 20px;
+		display: block;
+	}
+
+
+	/* label img */
+	.cont_checkbox_label {
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.cont_checkbox_img_inr {
+		width: 100%;
+		margin: 0 auto;
+		display: inherit;
+		box-sizing: border-box;
+		margin-top: 25px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.cont_checkbox_img_inr .cont_txt {
+		padding-left: 0;
+		width: inherit;
+	}
+	.cont_checkbox_img_inr .cont_txt p {
+		font-size: 14px;
+		font-family: "KozGoPro";
+		color: rgb(5, 0, 1);
+		line-height: 1.556;
+		margin-top: 20px;
+	}
+
+
+	/* cont_listbox */
+	.cont_listbox_inr {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 25px;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+	.cont_listbox_inr .cont_txt {
+		padding-left: 10px;
+	}
+	.cont_listbox_inr .cont_txt p {
+		font-size: 15px;
+		font-family: "KozGoPro";
+		line-height: 1.556;
+	}
+	.cont_listarea {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 25px;
+		background: #f1f1f1;
+		border: 1px solid #999;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding: 10px;
+		display: inherit;
+	}
+	.cont_listarea ul:first-child {
+		margin-right: 0;
+	}
+	.cont_listarea li {
+		font-size: 15px;
+		font-family: "Kozuka Gothic Pro";
+		color: rgb(5, 0, 1);
+		line-height: 1.556;
+	}
+	.cont_listarea span {
+		font-weight: bold;
+	}
+
+
+	/* 画像 */
+	.cont_listarea_img {
+		margin-top: 25px;
+		text-align: center;
+	}
+	.cont_listarea_img ul {
+		display: inherit;
+	}
+	.cont_listarea_img li:last-child {
+		margin-top: 10px;
+	}
+
+
+
+
+
+
+
+
+
+	
+}
+
+
+/* **************************
+  footer
+************************** */
+
+/*
+.ftr_wrap {
+	background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
