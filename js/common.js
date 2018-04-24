@@ -1,12 +1,12 @@
 $(function() {
 	$('.slick-box').slick({
 
-		dots: false, // スライダー下部に表示される、ドット状のページネーションです
-		infinite: true, // 無限ループ
-		speed: 300, // 切り替わりのスピード
-		slidesToShow: 4, //通常 1024px以上の領域では4画像表示
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 4,
 		slidesToScroll: 4,
-		/*autoplay: true,*/
+		autoplay: false,
 		responsive: [{
 			breakpoint: 1024,settings: { //601px～1024pxでは3画像表示
 				slidesToShow: 3,
