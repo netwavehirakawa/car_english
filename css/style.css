@@ -11,12 +11,39 @@
 }
 
 
+
+/* container */
 .container {
 	background: #fff;
 }
 
 
+/* main_visual */
+.main_visual {
+	background: #7abae2;
+}
+.main_visual_inr {
+	position: relative;
+	background: url(../images/head.png) no-repeat center;
+	background-size: contain;
+	width: 100%;
+	height: 600px;
+	 display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main_visual_inr h1 {
+	text-align: center;
+	font-size: 60px;
+	font-style: oblique;
+	font-weight: bold;
+	font-family: "Kozuka Gothic Pro";
+	line-height: 1.167;
+	text-shadow:4px 3px 0px #fff;
+}
 
+
+/* Each heading */
 .cont_ttl {
 	font-size: 40px;
 	font-family: "Kozuka Gothic Pro";
@@ -56,7 +83,6 @@
 	padding: 40px 0;
 	margin-top: 80px;
 }
-
 .ttl-none h2 {
 	padding-left: 0;
 }
@@ -90,10 +116,6 @@
 	font-family: "KozGoPro";
 	line-height: 1.556;
 }
-.cont_txtbox_inr .cont_img {
-
-}
-
 
 
 /* ODOMETER CHECK */
@@ -151,11 +173,9 @@
 	font-family: "KozGoPro";
 	color: rgb(5, 0, 1);
 	line-height: 1.556;
-
 }
 .cont_checkbox_img_inr .cont_img {
 	text-align: center;
-
 }
 
 
@@ -206,14 +226,14 @@
 	display: flex;
 	justify-content: space-between;
 }
-.cont_listarea_img li {
-
-}
 
 
 
+/*******
 
-/*** slick ***/
+ slick
+
+********/
 .slick-box_wrap {
 	width: 1000px;
 	margin: 0 auto;
@@ -224,24 +244,15 @@
 .slick-box_wrap img {
 	width: 100%;
 }
-
-
 .slick-box .slick-box_item span{
 	display: block;
-    margin: 5px;
-    padding: 15px;
-    position: relative;
-    border: 1px solid #999;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-/*.slick-box li {
+	margin: 5px;
+	padding: 15px;
+	position: relative;
 	border: 1px solid #999;
 	border-radius: 10px;
-}*/
-
-
-
+	box-sizing: border-box;
+}
 @media (max-width: 768px) {
 	.slick-box_wrap {
 		margin: auto;
@@ -256,11 +267,11 @@
 
 
 
-	/* *************************************************************
+/* *************************************************************
 
-	  SP
+  SP
 
-	************************************************************* */
+************************************************************* */
 
 @media screen and (max-width: 768px) {
 
@@ -296,51 +307,44 @@
 
 
 	/* **************************
+	  main_visual
+	************************** */
+	.main_visual_inr {
+		height: 300px;
+	}
+	.main_visual_inr h1 {
+		font-size: 45px;
+	}
+
+
+
+
+	/* **************************
 	  title
 	************************** */
-	.cont_ttl {
-		font-size: 40px;
-		font-family: "Kozuka Gothic Pro";
-		line-height: 1;
-		font-style: oblique;
-		font-weight: bold;
-		color: #74ecc9;
-		background: #000;
-		padding: 20px 0;
-	}
 	.cont_ttl_inr {
 		width: 100%;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
 		box-sizing: border-box;
 		padding-left: 20px;
 	}
 	.cont_ttl h2 {
 		font-size: 20px;
 		line-height: 1.2;
-		padding-left: 20px;
-		padding-right: 20px;
-		letter-spacing: 0.05em;
 	}
 
 
 	/* 1見出し */
 	.cont_ttl-no1 {
-		color: #fffc00;
-		font-size: 30px;
+		font-size: 45px;
 		line-height: 1.2;
 	}
 	.cont_ttl-no2 {
-		color: #e21423;
-		font-size: 30px;
+		font-size: 45px;
 		line-height: 1.2;
 	}
 	.ttl-none {
 		padding: 20px 0;
-		margin-top: 80px;
 	}
-
 	.ttl-none h2 {
 		padding-left: 0;
 	}
@@ -362,18 +366,9 @@
 		width: inherit;
 		box-sizing: border-box;
 	}
-	.cont_txtbox_inr .cont_txt h3 {
-		font-size: 25px;
-		font-weight: bold;
-		font-family: "Kozuka Gothic Pro";
-		color: rgb(5, 0, 1);
-		line-height: 1.4;
-	}
 	.cont_txtbox_inr .cont_txt p {
 		font-size: 15px;
 		padding-top: 10px;
-		font-family: "KozGoPro";
-		line-height: 1.556;
 	}
 	.cont_txtbox_inr .cont_img {
 		padding: 0 10px;
@@ -385,40 +380,22 @@
 
 	/* ODOMETER CHECK */
 	.cont_checkbox {
-		margin-bottom: 80px;
 		padding: 0 10px;
 	}
 	.cont_checkbox_inr {
 		width: 100%;
 		margin: 0 auto;
 		margin-top: 25px;
-		background: #f1f1f1;
-		border: 1px solid #999;
-		border-radius: 10px;
 		box-sizing: border-box;
 		padding: 25px 10px;
 	}
-	.cont_checkbox_ttl {
-		text-align: center;
-		color: #050001;
-		font-weight: bold;
-		font-family: "Kozuka Gothic Pro";
-	}
 	.cont_checkbox_ttl h4{
-		line-height: 0.8;
 		font-size: 24px;
-		color: #050001;
 	}
-	.cont_checkbox_ttl span {
-		padding-top: 20px;
-		display: block;
-	}
-
 
 	/* label img */
 	.cont_checkbox_label {
-		margin: 0 auto;
-		margin-top: 30px;
+		margin: 30px auto 0;
 	}
 	.cont_checkbox_img_inr {
 		width: 100%;
@@ -445,7 +422,6 @@
 	/* cont_listbox */
 	.cont_listbox_inr {
 		width: 100%;
-		margin: 0 auto;
 		margin-top: 25px;
 		padding: 0 10px;
 		box-sizing: border-box;
@@ -495,40 +471,4 @@
 		margin-top: 10px;
 	}
 
-
-
-
-
-
-
-
-
-	
 }
-
-
-/* **************************
-  footer
-************************** */
-
-/*
-.ftr_wrap {
-	background: #fff;
-}
-
-@media screen and (max-width: 768px) {
-
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
