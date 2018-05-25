@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* **************************
-  共通
+  å…±é€š
 ************************** */
 .pc_block {
 	display: block !important;
@@ -14,12 +14,13 @@
 
 
 /* **************************
-  トップ
+  ãƒˆãƒƒãƒ—
 ************************** */
 .container {
 	background: #fff;
 }
 
+/* main visual */
 .main_visual {
 	text-align: center;
 	position: relative;
@@ -51,6 +52,7 @@
   text-shadow: 0px 5px 0px rgba(7, 19, 92, 0.004);
 }
 
+/* å�„ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã�®ã‚¿ã‚¤ãƒˆãƒ« */
 .cont_ttl {
 	font-size: 40px;
 	font-family: "Kozuka Gothic Pro";
@@ -64,8 +66,14 @@
 .cont_ttl_inr {
 	width: 1000px;
 	margin: 0 auto;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	-webkit-align-items:center;
+	align-items:center;
 }
 .cont_ttl h2 {
 	font-size: 39.5px;
@@ -74,8 +82,6 @@
 	padding-right: 20px;
 	letter-spacing: 0.05em;
 }
-
-/* 1見出し */
 .cont_ttl-no1 {
 	color: #fffc00;
 	font-size: 100px;
@@ -90,11 +96,9 @@
 	padding: 40px 0;
 	margin-top: 80px;
 }
-
 .ttl-none h2 {
 	padding-left: 0;
 }
-
 
 
 /* 150 CARSEVEN  shops */
@@ -108,7 +112,6 @@
 	background: url(../images/bnr_img.jpg) no-repeat;
 	background-size: 1000px 342px;
 	height: 342px;
-
 }
 .cont_txtbox_inr .cont_txt {
 	padding-top: 80px;
@@ -148,7 +151,7 @@
 	font-weight: bold;
 	font-family: "Kozuka Gothic Pro";
 }
-.cont_checkbox_ttl h4{
+.cont_checkbox_ttl .cont_checkbox_txt {
 	line-height: 0.8;
 	font-size: 48px;
 	color: #050001;
@@ -167,13 +170,22 @@
 .cont_checkbox_img_inr {
 	width: 1000px;
 	margin: 0 auto;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 	display: flex;
 	box-sizing: border-box;
-	align-items: center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	-webkit-align-items:center;
+	align-items:center;
 	margin-top: 50px;
 	padding-left: 50px;
 	padding-right: 50px;
-	justify-content: space-between;
+	-webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
 }
 .cont_checkbox_img_inr .cont_txt {
 	padding-left: 50px;
@@ -184,11 +196,9 @@
 	font-family: "KozGoPro";
 	color: rgb(5, 0, 1);
 	line-height: 1.556;
-
 }
 .cont_checkbox_img_inr .cont_img {
 	text-align: center;
-
 }
 
 
@@ -215,6 +225,9 @@
 	border-radius: 10px;
 	box-sizing: border-box;
 	padding: 50px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 	display: flex;
 }
 .cont_listarea ul:first-child {
@@ -231,18 +244,20 @@
 }
 
 
-/* 画像 */
+/* ç”»åƒ� */
 .cont_listarea_img {
 	margin-top: 50px;
 }
 .cont_listarea_img ul {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
 }
-.cont_listarea_img li {
-
-}
-
 
 
 
@@ -257,8 +272,6 @@
 .slick-box_wrap img {
 	width: 100%;
 }
-
-
 .slick-box .slick-box_item span{
 	display: block;
     margin: 5px;
@@ -268,8 +281,6 @@
     border-radius: 10px;
     box-sizing: border-box;
 }
-
-
 @media (max-width: 768px) {
 	.slick-box_wrap {
 		margin: auto;
@@ -282,18 +293,28 @@
 }
 
 
+/* safariç”¨ */
+_::-webkit-full-page-media, _:future, :root .slick-box_wrap .slick-prev,
+_::-webkit-full-page-media, _:future, :root .slick-box_wrap .slick-next {
+	width: 53px;
+	height: 66px;
+}
+_::-webkit-full-page-media, _:future, :root .slick-box_wrap .slick-next {
+	right: -25px;
+}
 
 
-	/* *************************************************************
 
-	  SP
+/* *************************************************************
 
-	************************************************************* */
+	 SP
+
+************************************************************* */
 
 @media screen and (max-width: 768px) {
 
 	/* **************************
-	  共通
+	  å…±é€š
 	************************** */
 	.sp_block {
 		display: block !important;
@@ -327,7 +348,6 @@
 	  main_visual
 	************************** */
 	.main_visual {
-
 		height: auto;
 		background-size: contain;
 	}
@@ -369,8 +389,14 @@
 	.cont_ttl_inr {
 		width: 100%;
 		margin: 0 auto;
+		display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align:center;
+		-ms-flex-align:center;
+		-webkit-align-items:center;
+		align-items:center;
 		box-sizing: border-box;
 		padding-left: 20px;
 	}
@@ -381,9 +407,6 @@
 		padding-right: 20px;
 		letter-spacing: 0.05em;
 	}
-
-
-	/* 1見出し */
 	.cont_ttl-no1 {
 		color: #fffc00;
 		font-size: 30px;
@@ -398,7 +421,6 @@
 		padding: 10px 0;
 		margin-top: 80px;
 	}
-
 	.ttl-none h2 {
 		padding-left: 0;
 	}
@@ -535,7 +557,7 @@
 	}
 
 
-	/* 画像 */
+	/* ç”»åƒ� */
 	.cont_listarea_img {
 		margin-top: 25px;
 		text-align: center;
